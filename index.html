@@ -9,27 +9,21 @@
             }
             .navbar a, .morelinks {
                 font-size:25px; color:white; font-family:helvetica; text-decoration:none;
-                padding-left:25px; padding-right:25px; padding-top:16px padding-bottom:16px
+                padding:20px;
+                float:left;
             }
             
             .navbar a:hover, .morelinks:hover{
                 background-color:#77d5f2
             }
                 
-            .morelinks:hover .dropdown:content {
+            .morelinks:hover .dropdown-content {
                 display:block
             }
             
-            .dropdown:content {
-                position:absolute
+            .dropdown-content {
+                position: absolute;
             }
-                
-             .morelinks {
-                font-size:20px; color:white; font-family:helvetica; text-decoration:none;
-                padding:25px; padding-right:25px; padding-top:16px padding-bottom:16px
-            }
-           
-        
             
             
         </style>
@@ -40,21 +34,16 @@
         <h1>Portfolio</h1>
         <p>My first paragraph. Dylan Tang Period 3 </p>
         
-        <div class=navbar>
+        <div class="navbar">
             <a href="https://www.yahoo.com">Yahoo</a>
             <a href="https://www.google.com">Google</a>
-          
-            
+        <div class="dropdown">
+            <div class="morelinks">More Links</div>
+        <div class="dropdown-content">
+          <a href="https://aws.educate.com">AWS Educate</a>
+          <a href="https://www.collegeboard.org">College Board</a>
         </div>
-        <div class=dropdown>
-            
-              <a href="https://www.awseducate.com">AWS Educate</a>
-            <a href="https://<www.collegeboard.org">CollegeBoard</a>
-            
-        </div>
-        <div class=morelinks>
-            More Links
-            
+      </div> 
             
         </div>
     </body>
