@@ -1,50 +1,77 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Dylan's Portfolio</title>
-        <style>
-            .navbar {
-                background-color:#1388d6;
-                width:100%;
-            }
-            .navbar a, .morelinks {
-                font-size:25px; color:white; font-family:helvetica; text-decoration:none;
-                padding:20px;
-                float:left;
-            }
-            
-            .navbar a:hover, .morelinks:hover{
-                background-color:#77d5f2
-            }
-                
-            .morelinks:hover .dropdown-content {
-                display:block
-            }
-            
-            .dropdown-content {
-                position: absolute;
-            }
-            
-            
-        </style>
-    </head>
-    
-    <body>
+  <head>
 
-        <h1>Portfolio</h1>
-        <p>My first paragraph. Dylan Tang Period 3 </p>
-        
-        <div class="navbar">
-            <a href="https://www.yahoo.com">Yahoo</a>
-            <a href="https://www.google.com">Google</a>
-        <div class="dropdown">
-            <div class="morelinks">More Links</div>
+    <title>Dylan Tang's Portfolio</title>
+
+    <style>
+    
+     .navbar{
+        background-image: linear-gradient(to bottom, #1388d6, #219cdf, #3bb0e6, #59c3ec, #77d5f2);
+        width: 100%;
+        height: 60px;
+      }
+
+     .navbar a {
+        color: white;
+        font-size: 24px;
+        font-family:helvetica;
+        text-decoration: none;
+        padding:16px;
+        float:left;
+      }
+      
+      .morelinks {
+        color: white;
+        font-size: 24px;
+        font-family:helvetica;
+        text-decoration: none;
+        padding:16px;
+      }
+
+     .navbar a:hover, .morelinks:hover{
+        background-color: #77d5f2;
+      }
+
+     .dropdown:hover .dropdown-content{
+        display:block;
+        background-image: linear-gradient(to bottom, #ffbf29, #ffc53f, #ffca52, #ffd063, #ffd573);;
+      }
+
+     .dropdown-content{
+        position: absolute;
+        z-index:1;
+        display:none;
+      }
+     .dropdown {
+         background-image: linear-gradient(to bottom, #ffbf29, #ffc53f, #ffca52, #ffd063, #ffd573);
+         color:white;
+         float:left;
+         text-decoration:none;
+         font-size:24px;
+     }
+
+
+    </style>
+
+  </head>
+  <body>
+      
+    <div class="navbar">
+      <a href="https://www.yahoo.com">Yahoo</a>
+      <a href="https://www.google.com">Google</a>
+      <a href="https://codehs.com">CodeHS</a>
+      <a href="https://www.amazon.com/">Amazon</a>
+      
+      <div class="dropdown">
+        <div class="morelinks">More Links</div>
         <div class="dropdown-content">
-          <a href="https://aws.educate.com">AWS Educate</a>
+          <a href="https://www.awseducate.com">AWS Educate</a>
           <a href="https://www.collegeboard.org">College Board</a>
         </div>
-      </div> 
-            
-        </div>
-    </body>
+      </div>  
+
+    </div>
+    <h1>Dylan Tang's Portfolio</h1>
+  </body>
 </html>
