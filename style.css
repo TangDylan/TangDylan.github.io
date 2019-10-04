@@ -49,21 +49,6 @@
            background-color:rgb(255, 211, 16);
           }
 
-          .item{
-           width:200px;
-           text-align:center;
-           display:block;
-           background-color: transparent;
-           border: 1px solid transparent;
-           margin-right: 10px;
-           margin-bottom: 1px;
-           float:left;
-          }
-
-          #index-gallery {
-           width:750px;height:0px;
-          }
-
           .center {
               display:block;
               margin-left:auto;
