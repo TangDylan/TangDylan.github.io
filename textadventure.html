@@ -98,8 +98,8 @@
             }
 
             #storyimg{
-                width: 100%;
-                height: 100%
+                max-width: 100%;
+                max-height: 100%
                 
             }
 
@@ -143,18 +143,10 @@
                     <p id="p-text4"> </p>
                 </div>
                 <div id="choices">
-                    <a id="b1" href="#"> 1
-
-                    </a>
-                    <a id="b2" href="#"> 2
-
-                    </a>
-                    <a id="b3" href="#"> 3
-
-                    </a>
-                    <a id="b4" href="#"> 4
-
-                    </a>
+                    <a id="b1" onclick = "bclick(1)" href="#"> 1 </a>
+                    <a id="b2" onclick = "bclick(2)" href="#"> 2 </a>
+                    <a id="b3" onclick = "bclick(3)" href="#"> 3 </a>
+                    <a id="b4" onclick = "bclick(4)" href="#"> 4 </a>   
                 </div>
 
             </div>
@@ -172,21 +164,56 @@
             var b4 = document.getElementById('b4');
             var state = "intro";
 
-            function.intro(){
-                pic src = "images/fastfoodrestaurant.jpg"
-                ptext1.innerHTML("This is the intro to my story");
-                ptext2.innerHTML("");
-                ptext3.innerHTML("");
-                ptext4.innerHTML("");
 
-                b1.innerHTML("Yes");
-                b2.innerHTML("Yes");
-                b3.innerHTML("No");
-                b4.innerHTML("No");
-                b1.style.display = block
-                b2.style.display = none
-                b3.style.display = block
-                b4.style.display = none
+            intro();
+
+            function.intro(){
+                pic src = "images/fastfoodrestaurant.jpg";
+                ptext1.innerHTML = "This is the intro to my story";
+                ptext2.innerHTML = "";
+                ptext3.innerHTML = "";
+                ptext4.innerHTML = "";
+
+                b1.innerHTML = "Yes";
+                b2.innerHTML = "Yes";
+                b3.innerHTML = "No";
+                b4.innerHTML = "No";
+                b1.style.display = block;
+                b2.style.display = none;
+                b3.style.display = block;
+                b4.style.display = none;
+                state = "spillDrink";
+            }
+
+            function.spillDrink(){
+                pic src = "images/oj.jpg";
+                ptext1.innerHTML = "A hapless customer decides to spill their drink all over the floor.";
+                ptext2.innerHTML = "What will you do?";
+                ptext3.innerHTML = "";
+                ptext4.innerHTML = "";
+
+                b1.innerHTML = "Mop up the spill yourself";
+                b2.innerHTML = "Tell a coworker to mop up the spill";
+                b3.innerHTML = "Ask somebody to help you mop up the spill";
+                b4.innerHTML = "Pretend like you don't notice and wait for somebody else to do it";
+                b1.style.display = block;
+                b2.style.display = block;
+                b3.style.display = block;
+                b4.style.display = block;
+                state = "spillDrink";
+            }
+
+            //state machine//
+            function:bclick(button){
+                if (state == intro){
+                    if (button == 1){
+                        spillDrink();
+                    }
+                    else if(button == 2){
+                        //send them somewhere else//
+                    }
+
+            }
             }
         </script>
 
