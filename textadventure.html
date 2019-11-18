@@ -18,6 +18,7 @@
                 width: 56%;
                 height: 100%;
                 float: left;
+                display: flex;
                 align-items: center;
                 justify-content: center;
                 background-color: red;
@@ -53,40 +54,7 @@
                 background-color: yellow;
             }
 
-            #b1{
-                display: inline-block;
-                background-color: orange;
-                color: white;
-                size: 10px;
-                padding: 10px;
-                border-radius: 5px;
-                text-decoration: none;
-                margin: 10px;
-            }
-
-            #b2{
-                display: inline-block;
-                background-color: orange;
-                color: white;
-                size: 10px;
-                padding: 10px;
-                border-radius: 5px;
-                text-decoration: none;
-                margin: 10px;
-            }
-
-            #b3{
-                display: inline-block;
-                background-color: orange;
-                color: white;
-                size: 10px;
-                padding: 10px;
-                border-radius: 5px;
-                text-decoration: none;
-                margin: 10px;
-            }
-
-            #b4{
+            #b1, #b2, #b3, #b4{
                 display: inline-block;
                 background-color: orange;
                 color: white;
@@ -164,59 +132,95 @@
             var b4 = document.getElementById('b4');
             var state = "intro";
 
-
             intro();
 
-            function.intro(){
-                pic src = "images/fastfoodrestaurant.jpg";
-                ptext1.innerHTML = "This is the intro to my story";
-                ptext2.innerHTML = "";
-                ptext3.innerHTML = "";
-                ptext4.innerHTML = "";
+    function intro(){
+        pic.src = "images/fastfoodworker.jpg";
+        ptext1.innerHTML = "This is the intro to my story";
+        ptext2.innerHTML = "";
+        ptext3.innerHTML = "";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "Continue";
+        b2.innerHTML = "No";
+        b1.style.display = "block";
+        b2.style.display = "none";
+        b3.style.display = "none";
+        b4.style.display = "none";
+        
+    }
 
-                b1.innerHTML = "Yes";
-                b2.innerHTML = "Yes";
-                b3.innerHTML = "No";
-                b4.innerHTML = "No";
-                b1.style.display = block;
-                b2.style.display = none;
-                b3.style.display = block;
-                b4.style.display = none;
+    function spillDrink(){
+        pic.src = "images/a-woman-spilling-her-drink-as-she-sneezes.jpg";
+        ptext1.innerHTML = "On the first day of work, a customer named Karen spills an XXL soda all over the cashier countertop. She blames you for spilling the drink and demands a refund on her soda. All this noise and ruckus is bound to make the manager come out soon. Time is ticking, what do you do?";
+        ptext2.innerHTML = "";
+        ptext3.innerHTML = "";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "Clean";
+        b2.innerHTML = "Run";
+        b3.innerHTML = "Ignore";
+        b4.innerHTML = "Ask For Help";
+        b1.style.display = "block";
+        b2.style.display = "block";
+        b3.style.display = "block";
+        b4.style.display = "block";
+  
+    }
+    function soloCleanDrink(){
+        pic.src = "images/fastfoodrestaurant.jpg";
+        ptext1.innerHTML = "CLEAN.";
+        ptext2.innerHTML = "What would you like to do?";
+        ptext3.innerHTML = "";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "Clean";
+        b2.innerHTML = "AHHAHAHHH";
+        b3.innerHTML = "HELP ME";
+        b1.style.display = "block";
+        b2.style.display = "block";
+        b3.style.display = "block";
+        b4.style.display = "none";
+       
+
+    }
+
+
+    //state machine
+    function bclick(button){
+        if(state == "intro"){
+            if (button == 1){
+                spillDrink();
                 state = "spillDrink";
             }
-
-            function.spillDrink(){
-                pic src = "images/oj.jpg";
-                ptext1.innerHTML = "A hapless customer decides to spill their drink all over the floor.";
-                ptext2.innerHTML = "What will you do?";
-                ptext3.innerHTML = "";
-                ptext4.innerHTML = "";
-
-                b1.innerHTML = "Mop up the spill yourself";
-                b2.innerHTML = "Tell a coworker to mop up the spill";
-                b3.innerHTML = "Ask somebody to help you mop up the spill";
-                b4.innerHTML = "Pretend like you don't notice and wait for somebody else to do it";
-                b1.style.display = block;
-                b2.style.display = block;
-                b3.style.display = block;
-                b4.style.display = block;
-                state = "spillDrink";
+            else if(button == 2){
+                
             }
-
-            //state machine//
-            function:bclick(button){
-                if (state == intro){
-                    if (button == 1){
-                        spillDrink();
-                    }
-                    else if(button == 2){
-                        //send them somewhere else//
-                    }
-                    return false;
-                    
-
+            else if(button == 3){
+                
             }
+            else if(button == 4){
+                
             }
+           
+        }
+        
+        if(state == "spillDrink"){
+            if (button == 1){
+                soloCleanDrink();
+                state = "soloCleanDrink";
+            }
+            else if(button == 2){
+                soloCleanDrink();
+                state = "soloCleanDrink"
+            }
+            else if(button == 3){
+                
+            }
+            else if(button == 4){
+                
+            }
+           
+        }
+        return false;
+    }
         </script>
 
 
