@@ -21,7 +21,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background-color: red;
+                background-color: white;
             }
 
             #right-pane{
@@ -38,7 +38,7 @@
                 left: 56%;
                 right: 0px;
                 justify-content: center;
-                background-color: pink;
+                background-color: lightgray;
                 padding: 8px;
             }
 
@@ -51,7 +51,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background-color: yellow;
+                background-color: white;
             }
 
             #b1, #b2, #b3, #b4{
@@ -59,8 +59,8 @@
                 background-color: orange;
                 color: white;
                 size: 10px;
-                padding: 10px;
-                border-radius: 5px;
+                padding: 3px;
+                border-radius: 8px;
                 text-decoration: none;
                 margin: 10px;
             }
@@ -156,9 +156,9 @@
         ptext3.innerHTML = "";
         ptext4.innerHTML = "";
         b1.innerHTML = "Clean";
-        b2.innerHTML = "Run";
-        b3.innerHTML = "Ignore";
-        b4.innerHTML = "Ask For Help";
+        b2.innerHTML = "Ignore";
+        b3.innerHTML = "Tell someone else to do it";
+        b4.innerHTML = "Ask for help";
         b1.style.display = "block";
         b2.style.display = "block";
         b3.style.display = "block";
@@ -171,6 +171,34 @@
         ptext2.innerHTML = "The manager then asks you if you can help with any other work.";
         ptext3.innerHTML = "What do you say?";
         ptext4.innerHTML = "";
+        b1.innerHTML = "Yes (Agree to help)";
+        b2.innerHTML = "No. I'm going to take a break.";
+        b3.innerHTML = "";
+        b1.style.display = "block";
+        b2.style.display = "block";
+        b3.style.display = "none";
+        b4.style.display = "none";
+    }
+    function ignoreSpill(){
+        pic.src = "";
+        ptext1.innerHTML = "You decide to ignore the spill. Maybe the manager won't notice it, right?";
+        ptext2.innerHTML = "Well, your luck came in as the manager didn't notice the spill. Unfortunately, he also slipped on the spill, which caused him to severely injure his left ankle. He is in need of immediate help, this is your chance to do something life changing!";
+        ptext3.innerHTML = "What do you do?";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "Give him medicine to help with the pain and call the E.R.";
+        b2.innerHTML = "Give him rat poison disguised as the new promotional dipping sauce";
+        b3.innerHTML = "";
+        b1.style.display = "block";
+        b2.style.display = "block";
+        b3.style.display = "none";
+        b4.style.display = "none";
+    }
+    function agreeHelpDrink(){
+        pic.src = "";
+        ptext1.innerHTML = "The manager makes you restock shelves in the back for the next 6 hours.";
+        ptext2.innerHTML = "You wonder if you will get promoted.";
+        ptext3.innerHTML = "";
+        ptext4.innerHTML = "";
         b1.innerHTML = "Continue";
         b2.innerHTML = "";
         b3.innerHTML = "";
@@ -178,8 +206,20 @@
         b2.style.display = "none";
         b3.style.display = "none";
         b4.style.display = "none";
-       
-
+    }
+    function declineHelpDrink(){
+        pic.src = "";
+        ptext1.innerHTML = "You enjoy your break and your manager is happy you did your job. He seems to be in a good mood.";
+        ptext2.innerHTML = "You wonder if you will get promoted.";
+        ptext3.innerHTML = "";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "Continue";
+        b2.innerHTML = "";
+        b3.innerHTML = "";
+        b1.style.display = "block";
+        b2.style.display = "none";
+        b3.style.display = "none";
+        b4.style.display = "none";
     }
 
 
@@ -190,31 +230,39 @@
                 spillDrink();
                 state = "spillDrink";
             }
-            
-        else if(state = "spillDrink"){
+        }    
+        else if(state == "spillDrink"){
              if (button == 1){
                 soloCleanDrink();
                 state = "soloCleanDrink";
             }
-            if(button == 2){
-                
+            else if(button == 2){
+                ignoreSpill();
+                state = "ignoreSpill";
             }
-            if(button == 3){
-                
+            else if(button == 3){
+                askHelpDrink();
+                state = "askHelpDrink";
             }
-            if(button == 4){
+            else if(button == 4){
                 
-          
-          
-            }
-           
+            }     
         }
+        else if(state == "soloCleanDrink"){
+            if (button == 1){
+                agreeHelpDrink();
+                state = "agreeHelpDrink";
+            }
+            else if(button == 2){
+                declineHelpDrink();
+                state = "declineHelpDrink";
+            }
+    }
+
+
+    
         return false;
     }
         </script>
-
-
-
     </body>
-
 </html>
