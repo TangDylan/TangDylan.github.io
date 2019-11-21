@@ -136,6 +136,20 @@
 
     function intro(){
         pic.src = "images/burgerplace.png";
+        ptext1.innerHTML = "You are a dull child named Fry Guy that never did well in school, but always had a passion for cooking. You decide that school is not important and you should drop out and pursue your passion of becoming a master chef. You get a job at The Burger Place in order to learn the basics of working with others in a restaurant setting.";
+        ptext2.innerHTML = "You love your job at The Burger Place and you realize that it is not your dream to become a master chef, but a manager at the fast food restaurant. Currently you are only a lowly fry cook who only needs to make a few batches of fries a day. When you are making fries you are usually idle at the fry machine in the back of the restaurant waiting for them to cook.";
+        ptext3.innerHTML = "You get to talk to the other chefs who are at their stations across the way from the fry machine. On occasion, you have the opportunity to take people’s orders at the cash register that faces the ‘dining’ area. The time you spend not cooking fries is spent cleaning up messes in the dining area where the customers eat their meals. ";
+        ptext4.innerHTML = "After getting your job you begin working your way up the ladder in hopes of one day becoming a manager.";
+        b1.innerHTML = "Continue";
+        b2.innerHTML = "No";
+        b1.style.display = "block";
+        b2.style.display = "none";
+        b3.style.display = "none";
+        b4.style.display = "none";
+        
+    }
+    function restart(){
+        pic.src = "images/burgerplace.png";
         ptext1.innerHTML = "This is the intro to my story";
         ptext2.innerHTML = "";
         ptext3.innerHTML = "";
@@ -148,7 +162,6 @@
         b4.style.display = "none";
         
     }
-
     function spillDrink(){
         pic.src = "images/a-woman-spilling-her-drink-as-she-sneezes.jpg";
         ptext1.innerHTML = "On the first day of work, a customer named Karen spills an XXL soda all over the cashier countertop. She blames you for spilling the drink and demands a refund on her soda. All this noise and ruckus is bound to make the manager come out soon. Time is ticking, what do you do?";
@@ -221,7 +234,48 @@
         b3.style.display = "none";
         b4.style.display = "none";
     }
-
+function stuckBusyWork(){
+        pic.src = "";
+        ptext1.innerHTML = "Your manager decides that he likes having you do all the work, after all, it's just less work for him.";
+        ptext2.innerHTML = "You will forever be stuck as an average workhorse at Burger Place. You have no chance of becoming the manager.";
+        ptext3.innerHTML = "Restart?";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "Restart";
+        b2.innerHTML = "";
+        b3.innerHTML = "";
+        b1.style.display = "block";
+        b2.style.display = "none";
+        b3.style.display = "none";
+        b4.style.display = "none";
+    }
+    function promoteRestDrink(){
+        pic.src = "";
+        ptext1.innerHTML = "You enjoy your break and your manager is happy you did your job.";
+        ptext2.innerHTML = "You continue to work diligently and eventually get offered a position as assistant to the manager";
+        ptext3.innerHTML = "Do you accept the new position as assistant to the manager?";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "Yes";
+        b2.innerHTML = "No";
+        b3.innerHTML = "";
+        b1.style.display = "block";
+        b2.style.display = "block";
+        b3.style.display = "none";
+        b4.style.display = "none";
+    }
+    function continueFryCook(){
+        pic.src = "";
+        ptext1.innerHTML = "Your supervisor is impressed that you want to improve yourself a lot before becoming an assistant";
+        ptext2.innerHTML = "You continue to work as a fry cook.";
+        ptext3.innerHTML = "What do you want to do next?";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "Keep grinding hard for that promotion!";
+        b2.innerHTML = "Have some fun on the job.";
+        b3.innerHTML = "";
+        b1.style.display = "block";
+        b2.style.display = "block";
+        b3.style.display = "none";
+        b4.style.display = "none";
+    }
 
     //state machine
     function bclick(button){
@@ -257,12 +311,49 @@
                 declineHelpDrink();
                 state = "declineHelpDrink";
             }
-    }
+        }
+        else if(state == "agreeHelpDrink"){
+            if (button == 1){
+                stuckBusyWork();
+                state = "stuckBusyWork";
+            }
+        }
+        else if(state == "stuckBusyWork"){
+            if (button == 1){
+                intro();
+                state = "intro";
+            }
+        }
+        else if(state == "declineHelpDrink"){
+            if (button == 1){
+                promoteRestDrink();
+                state = "promoteRestDrink";
+            }
+        }
+        else if(state == "promoteRestDrink"){
+            if (button == 1){
+                goodAssistant();
+                state = "goodAssistant";
+            }
+            else if (button == 2){
+                continueFryCook();
+                state = "continueFryCook";
+            }
+        }
 
 
-    
+
+
+
         return false;
     }
         </script>
     </body>
 </html>
+
+<!-- else if(state == ""){
+            if (button == 1){
+                intro();
+                state = "intro";
+            }
+        } -->
