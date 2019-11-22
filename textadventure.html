@@ -192,20 +192,6 @@
         b3.style.display = "none";
         b4.style.display = "none";
     }
-    function ignoreSpill(){
-        pic.src = "";
-        ptext1.innerHTML = "You decide to ignore the spill. Maybe the manager won't notice it, right?";
-        ptext2.innerHTML = "Well, your luck came in as the manager didn't notice the spill. Unfortunately, he also slipped on the spill, which caused him to severely injure his left ankle. He is in need of immediate help, this is your chance to do something life changing!";
-        ptext3.innerHTML = "What do you do?";
-        ptext4.innerHTML = "";
-        b1.innerHTML = "Give him medicine to help with the pain and call the E.R.";
-        b2.innerHTML = "Give him rat poison disguised as the new promotional dipping sauce";
-        b3.innerHTML = "";
-        b1.style.display = "block";
-        b2.style.display = "block";
-        b3.style.display = "none";
-        b4.style.display = "none";
-    }
     function agreeHelpDrink(){
         pic.src = "";
         ptext1.innerHTML = "The manager makes you restock shelves in the back for the next 6 hours.";
@@ -251,7 +237,7 @@ function stuckBusyWork(){
     function promoteRestDrink(){
         pic.src = "";
         ptext1.innerHTML = "You enjoy your break and your manager is happy you did your job.";
-        ptext2.innerHTML = "You continue to work diligently and eventually get offered a position as assistant to the manager";
+        ptext2.innerHTML = "You continue to work diligently and eventually get offered a position as assistant to the manager.";
         ptext3.innerHTML = "Do you accept the new position as assistant to the manager?";
         ptext4.innerHTML = "";
         b1.innerHTML = "Yes";
@@ -264,7 +250,7 @@ function stuckBusyWork(){
     }
     function continueFryCook(){
         pic.src = "";
-        ptext1.innerHTML = "Your supervisor is impressed that you want to improve yourself a lot before becoming an assistant";
+        ptext1.innerHTML = "Your supervisor is impressed that you want to improve yourself a lot before becoming an assistant.";
         ptext2.innerHTML = "You continue to work as a fry cook.";
         ptext3.innerHTML = "What do you want to do next?";
         ptext4.innerHTML = "";
@@ -276,6 +262,120 @@ function stuckBusyWork(){
         b3.style.display = "none";
         b4.style.display = "none";
     }
+    function goodAssistant(){
+        pic.src = "";
+        ptext1.innerHTML = "You accept the job, but it seems like nothing has changed, just more work.";
+        ptext2.innerHTML = "You are forever stuck as an assistant to the manager.";
+        ptext3.innerHTML = "Restart?";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "Restart";
+        b2.innerHTML = "";
+        b3.innerHTML = "";
+        b1.style.display = "block";
+        b2.style.display = "none";
+        b3.style.display = "none";
+        b4.style.display = "none";
+    }
+    function askBabysit(){
+        pic.src = "";
+        ptext1.innerHTML = "One day, Your manager asks you to babysit his children. He has enough trust in you due to all the hard work that you've done.";
+        ptext2.innerHTML = "";
+        ptext3.innerHTML = "What do you do?";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "Accept the offer";
+        b2.innerHTML = "Decline the offer";
+        b3.innerHTML = "";
+        b1.style.display = "block";
+        b2.style.display = "block";
+        b3.style.display = "none";
+        b4.style.display = "none";
+    }
+    function agreeBabysit(){
+        pic.src = "";
+        ptext1.innerHTML = "You accept the manager's offer to babysit his children, what could go wrong?";
+        ptext2.innerHTML = "You babysit his children and they destroy the house while you're in the bathroom. Your manager loses all happiness and commits suicide.";
+        ptext3.innerHTML = "You will never get promoted and you are now charged for second degree murder facing two life sentences with no parole.";
+        ptext4.innerHTML = "You contemplate what could have been the future of the two children you murdered and your final days of freedom as you whimper and sob in silence.";
+        b1.innerHTML = "Restart";
+        b2.innerHTML = "";
+        b3.innerHTML = "";
+        b1.style.display = "block";
+        b2.style.display = "none";
+        b3.style.display = "none";
+        b4.style.display = "none";
+    }
+    function declineBabysit(){
+        pic.src = "";
+        ptext1.innerHTML = "You decline his offer. Luckily, he understands and finds someone else to babysit his children.";
+        ptext2.innerHTML = "Unfortunately, he becomes very sick and is bedridden for a whole month. He offers you the manager position for the time being.";
+        ptext3.innerHTML = "What do you do?";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "Agree";
+        b2.innerHTML = "Decline";
+        b3.innerHTML = "";
+        b1.style.display = "block";
+        b2.style.display = "block";
+        b3.style.display = "none";
+        b4.style.display = "none";
+    }
+    function fireBabysit(){
+        pic.src = "";
+        ptext1.innerHTML = "You decline his offer. He then finds someone else to be manager.";
+        ptext2.innerHTML = "One of your fellow cooks covers for him and gets promoted because he did a great job. Your life spirals out of control because you are so sad, and you lose everything you have including your job at the Burger Place.";
+        ptext3.innerHTML = "";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "Restart";
+        b2.innerHTML = "";
+        b3.innerHTML = "";
+        b1.style.display = "block";
+        b2.style.display = "none";
+        b3.style.display = "none";
+        b4.style.display = "none";
+    }
+    function promoteBabysit(){
+        pic.src = "";
+        ptext1.innerHTML = "You accept his offer.";
+        ptext2.innerHTML = "You do a great job and everybody who you worked with is very happy with your performance. Your manager decides it's time for you to get a promotion and you become the manager of The Burger Place.";
+        ptext3.innerHTML = "";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "Restart";
+        b2.innerHTML = "";
+        b3.innerHTML = "";
+        b1.style.display = "block";
+        b2.style.display = "none";
+        b3.style.display = "none";
+        b4.style.display = "none";
+    }
+    function ignoreSpill(){
+        pic.src = "";
+        ptext1.innerHTML = "You decide to ignore the spill. Maybe the manager won't notice it, right?";
+        ptext2.innerHTML = "Well, your luck came in as the manager didn't notice the spill. Unfortunately, he also slipped on the spill, which caused him to severely injure his left ankle. He is in need of immediate help, this is your chance to do something life changing!";
+        ptext3.innerHTML = "What do you do?";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "Give him medicine to help with the pain and call the E.R.";
+        b2.innerHTML = "Give him rat poison disguised as the new promotional dipping sauce";
+        b3.innerHTML = "";
+        b1.style.display = "block";
+        b2.style.display = "block";
+        b3.style.display = "none";
+        b4.style.display = "none";
+    }
+    function giveRatPoison(){
+        pic.src = "";
+        ptext1.innerHTML = "You decide to sabotage the manager. You will trick him by giving him rat poison disguised as the new promotional dipping sauce. After all, his suffering must be ended.";
+        ptext2.innerHTML = "You laugh with power as he falls over dead.";
+        ptext3.innerHTML = "You now declare yourself as the new manager and rule with an iron fist.";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "Restart";
+        b2.innerHTML = "";
+        b3.innerHTML = "";
+        b1.style.display = "block";
+        b2.style.display = "none";
+        b3.style.display = "none";
+        b4.style.display = "none";
+    }
+
+
 
     //state machine
     function bclick(button){
@@ -340,8 +440,76 @@ function stuckBusyWork(){
                 state = "continueFryCook";
             }
         }
-
-
+        else if(state == "goodAssistant"){
+            if (button == 1){
+                intro();
+                state = "intro";
+            }
+        }
+        else if(state == "continueFryCook"){
+            if (button == 1){
+                askBabysit();
+                state = "askBabysit";
+            }
+            else if (button == 2){
+                testFryStation();
+                state = "testFryStation";
+            }
+        }
+        else if(state == "askBabysit"){
+            if (button == 1){
+                agreeBabysit();
+                state = "agreeBabysit";
+            }
+            else if (button == 2){
+                declineBabysit();
+                state = "declineBabysit";
+            }
+        }
+        else if(state == "agreeBabysit"){
+            if (button == 1){
+                intro();
+                state = "intro";
+            }
+        }
+        else if(state == "declineBabysit"){
+            if (button == 1){
+                promoteBabysit();
+                state = "promoteBabysit";
+            }
+            else if (button == 2){
+                fireBabysit();
+                state = "fireBabysit";
+            }
+        }
+        else if(state == "promoteBabysit"){
+            if (button == 1){
+                intro();
+                state = "intro";
+            }
+        }
+        else if(state == "fireBabysit"){
+            if (button == 1){
+                intro();
+                state = "intro";
+            }
+        }
+        else if(state == "ignoreSpill"){
+            if (button == 1){
+                giveMedicine();
+                state = "giveMedicine";
+            }
+            else if (button == 2){
+                giveRatPoison();
+                state = "giveRatPoison";
+            }
+        }
+        else if(state == "giveRatPoison"){
+            if (button == 1){
+                intro();
+                state = "intro";
+            }
+        }
 
 
 
