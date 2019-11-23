@@ -148,7 +148,7 @@
         b4.style.display = "none";
     }
     function spillDrink(){
-        pic.src = "images/a-woman-spilling-her-drink-as-she-sneezes.jpg";
+        pic.src = "images/spillDrink.png";
         ptext1.innerHTML = "On the first day of work, a customer named Karen spills an XXL soda all over the cashier countertop. She blames you for spilling the drink and demands a refund on her soda. All this noise and ruckus is bound to make the manager come out soon. Time is ticking, what do you do?";
         ptext2.innerHTML = "";
         ptext3.innerHTML = "";
@@ -161,10 +161,23 @@
         b2.style.display = "block";
         b3.style.display = "block";
         b4.style.display = "block";
-  
+    }
+    function tellSomeoneElse(){
+        pic.src = "images/tellSomeoneElse.png";
+        ptext1.innerHTML = "You ask your coworker to clean it up. He rushes to clean it up. Looks like its easy to command your coworkers, maybe the manager position is perfect for you.";
+        ptext2.innerHTML = "Your manager then orders you to go to your fry station.";
+        ptext3.innerHTML = "";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "Go to your fry station";
+        b2.innerHTML = "";
+        b3.innerHTML = "";
+        b1.style.display = "block";
+        b2.style.display = "none";
+        b3.style.display = "none";
+        b4.style.display = "none";
     }
     function soloCleanDrink(){
-        pic.src = "images/fastfoodrestaurant.jpg";
+        pic.src = "images/soloCleanDrink.png";
         ptext1.innerHTML = "You decide to clean the mess yourself. The manager notices your amazing work and praises you.";
         ptext2.innerHTML = "The manager then asks you if you can help with any other work.";
         ptext3.innerHTML = "What do you say?";
@@ -178,7 +191,7 @@
         b4.style.display = "none";
     }
     function agreeHelpDrink(){
-        pic.src = "";
+        pic.src = "images/agreeHelpDrink.png";
         ptext1.innerHTML = "The manager makes you restock shelves in the back for the next 6 hours.";
         ptext2.innerHTML = "You wonder if you will get promoted.";
         ptext3.innerHTML = "";
@@ -192,7 +205,7 @@
         b4.style.display = "none";
     }
     function declineHelpDrink(){
-        pic.src = "";
+        pic.src = "images/declineHelpDrink.png";
         ptext1.innerHTML = "You enjoy your break and your manager is happy you did your job. He seems to be in a good mood.";
         ptext2.innerHTML = "You wonder if you will get promoted.";
         ptext3.innerHTML = "";
@@ -206,7 +219,7 @@
         b4.style.display = "none";
     }
 function stuckBusyWork(){
-        pic.src = "";
+        pic.src = "images/stuckBusyWork.png";
         ptext1.innerHTML = "Your manager decides that he likes having you do all the work, after all, it's just less work for him.";
         ptext2.innerHTML = "You will forever be stuck as an average workhorse at Burger Place. You have no chance of becoming the manager.";
         ptext3.innerHTML = "Restart?";
@@ -220,7 +233,7 @@ function stuckBusyWork(){
         b4.style.display = "none";
     }
     function promoteRestDrink(){
-        pic.src = "";
+        pic.src = "images/promoteRestDrink.png";
         ptext1.innerHTML = "You enjoy your break and your manager is happy you did your job.";
         ptext2.innerHTML = "You continue to work diligently and eventually get offered a position as assistant to the manager.";
         ptext3.innerHTML = "Do you accept the new position as assistant to the manager?";
@@ -234,8 +247,8 @@ function stuckBusyWork(){
         b4.style.display = "none";
     }
     function continueFryCook(){
-        pic.src = "";
-        ptext1.innerHTML = "Your supervisor is impressed that you want to improve yourself a lot before becoming an assistant.";
+        pic.src = "images/continueFryCook.png";
+        ptext1.innerHTML = "Your manager is impressed that you want to improve yourself a lot before becoming an assistant.";
         ptext2.innerHTML = "You continue to work as a fry cook.";
         ptext3.innerHTML = "What do you want to do next?";
         ptext4.innerHTML = "";
@@ -248,7 +261,7 @@ function stuckBusyWork(){
         b4.style.display = "none";
     }
     function goodAssistant(){
-        pic.src = "";
+        pic.src = "images/goodAssistant.png";
         ptext1.innerHTML = "You accept the job, but it seems like nothing has changed, just more work.";
         ptext2.innerHTML = "You are forever stuck as an assistant to the manager.";
         ptext3.innerHTML = "Restart?";
@@ -262,7 +275,7 @@ function stuckBusyWork(){
         b4.style.display = "none";
     }
     function askBabysit(){
-        pic.src = "";
+        pic.src = "images/askBabysit.png";
         ptext1.innerHTML = "One day, Your manager asks you to babysit his children. He has enough trust in you due to all the hard work that you've done.";
         ptext2.innerHTML = "";
         ptext3.innerHTML = "What do you do?";
@@ -276,7 +289,7 @@ function stuckBusyWork(){
         b4.style.display = "none";
     }
     function agreeBabysit(){
-        pic.src = "";
+        pic.src = "images/agreeBabysit.png";
         ptext1.innerHTML = "You accept the manager's offer to babysit his children, what could go wrong?";
         ptext2.innerHTML = "You babysit his children and they destroy the house while you're in the bathroom. Your manager loses all happiness and commits suicide.";
         ptext3.innerHTML = "You will never get promoted and you are now charged for second degree murder facing two life sentences with no parole.";
@@ -290,7 +303,7 @@ function stuckBusyWork(){
         b4.style.display = "none";
     }
     function declineBabysit(){
-        pic.src = "";
+        pic.src = "images/declineBabysit.png";
         ptext1.innerHTML = "You decline his offer. Luckily, he understands and finds someone else to babysit his children.";
         ptext2.innerHTML = "Unfortunately, he becomes very sick and is bedridden for a whole month. He offers you the manager position for the time being.";
         ptext3.innerHTML = "What do you do?";
@@ -304,7 +317,7 @@ function stuckBusyWork(){
         b4.style.display = "none";
     }
     function fireBabysit(){
-        pic.src = "";
+        pic.src = "images/fireBabysit.png";
         ptext1.innerHTML = "You decline his offer. He then finds someone else to be manager.";
         ptext2.innerHTML = "One of your fellow cooks covers for him and gets promoted because he did a great job. Your life spirals out of control because you are so sad, and you lose everything you have including your job at the Burger Place.";
         ptext3.innerHTML = "";
@@ -318,7 +331,7 @@ function stuckBusyWork(){
         b4.style.display = "none";
     }
     function promoteBabysit(){
-        pic.src = "";
+        pic.src = "images/promoteBabysit.png";
         ptext1.innerHTML = "You accept his offer.";
         ptext2.innerHTML = "You do a great job and everybody who you worked with is very happy with your performance. Your manager decides it's time for you to get a promotion and you become the manager of The Burger Place.";
         ptext3.innerHTML = "";
@@ -332,7 +345,7 @@ function stuckBusyWork(){
         b4.style.display = "none";
     }
     function ignoreSpill(){
-        pic.src = "";
+        pic.src = "images/ignoreSpill.png";
         ptext1.innerHTML = "You decide to ignore the spill. Maybe the manager won't notice it, right?";
         ptext2.innerHTML = "Well, your luck came in as the manager didn't notice the spill. Unfortunately, he also slipped on the spill, which caused him to severely injure his left ankle. He is in need of immediate help, this is your chance to do something life changing!";
         ptext3.innerHTML = "What do you do?";
@@ -346,7 +359,7 @@ function stuckBusyWork(){
         b4.style.display = "none";
     }
     function giveRatPoison(){
-        pic.src = "";
+        pic.src = "images/giveRatPoison.png";
         ptext1.innerHTML = "You decide to sabotage the manager. You will trick him by giving him rat poison disguised as the new promotional dipping sauce. After all, his suffering must be ended.";
         ptext2.innerHTML = "You laugh with power as he falls over dead.";
         ptext3.innerHTML = "You now declare yourself as the new manager and rule with an iron fist.";
@@ -360,7 +373,7 @@ function stuckBusyWork(){
         b4.style.display = "none";
     }
     function giveMedicine(){
-        pic.src = "";
+        pic.src = "images/giveMedicine.png";
         ptext1.innerHTML = "You give the manager some pain medicine. He starts to feel better and then an ambulance arrives. He is sent to the hospital and will be gone for a month.";
         ptext2.innerHTML = "You decide to call to check up on him. While the phone is ringing, you contemplate what to say. After all, this might be the only chance you have of becoming manager. If the manager returns, he will be even more strict and harsh than ever.";
         ptext3.innerHTML = "";
@@ -374,7 +387,7 @@ function stuckBusyWork(){
         b4.style.display = "none";
     }
     function managerNotNeeded(){
-        pic.src = "";
+        pic.src = "images/managerNotNeeded.png";
         ptext1.innerHTML = "When you tell him this news, he becomes frustrated and shocked, which causes him to resign in anger.";
         ptext2.innerHTML = "You self-proclaim yourself as the manager and now run the Burger Place establishment. You have finally reached the goal of becoming manager and now live the rest of your days in happiness and as the greatest manager who ever lived.";
         ptext3.innerHTML = "";
@@ -388,7 +401,7 @@ function stuckBusyWork(){
         b4.style.display = "none";
     }
     function supervisorFire(){
-        pic.src = "";
+        pic.src = "images/supervisorFire.png";
         ptext1.innerHTML = "You tell him that his supervisor has fired him due to reckless walking. He understands and passes down the manager position to you. You then live the rest of your life as the greatest manager that the Burger Place franchise has ever seen.";
         ptext2.innerHTML = "";
         ptext3.innerHTML = "";
@@ -402,7 +415,7 @@ function stuckBusyWork(){
         b4.style.display = "none";
     }
     function askHelpDrink(){
-        pic.src = "";
+        pic.src = "images/askHelpDrink.png";
         ptext1.innerHTML = "Your manager is glad you asked for help and he himself steps in to assist in cleaning.";
         ptext2.innerHTML = "What do you do?";
         ptext3.innerHTML = "";
@@ -416,7 +429,7 @@ function stuckBusyWork(){
         b4.style.display = "none";
     }
     function makeSmallTalk(){
-        pic.src = "";
+        pic.src = "images/makeSmallTalk.png";
         ptext1.innerHTML = "You try to make some small talk with your manager, but you don't really know what to say. You start to ramble on and on for what seems like hours, and you think that everything is going fine.";
         ptext2.innerHTML = "";
         ptext3.innerHTML = "";
@@ -430,7 +443,7 @@ function stuckBusyWork(){
         b4.style.display = "none";
     }
     function talkFantasyFootball(){
-        pic.src = "";
+        pic.src = "images/talkFantasyFootball.png";
         ptext1.innerHTML = "You decide to talk about some fantasy football with your manager. He seems to be very passionate about it, so you talk about how you love the Harlem Hotdogs. Turns out that your manager is a massive fans of the Detroit Donuts, the rival team to the Harlem Hotdogs.";
         ptext2.innerHTML = "He fires you for liking the wrong football team";
         ptext3.innerHTML = "";
@@ -444,7 +457,7 @@ function stuckBusyWork(){
         b4.style.display = "none";
     }
     function awkwardSmallTalk(){
-        pic.src = "";
+        pic.src = "images/awkwardSmallTalk.png";
         ptext1.innerHTML = "Your small talk becomes quite awkward as it turns out your manager really isn't into pre-industrial sewage infrastructure. You decide to get back to work once the mess is cleaned up.";
         ptext2.innerHTML = "Time to go back to work.";
         ptext3.innerHTML = "";
@@ -458,7 +471,7 @@ function stuckBusyWork(){
         b4.style.display = "none";
     }
     function cleanFryStation(){
-        pic.src = "";
+        pic.src = "images/cleanFryStation.png";
         ptext1.innerHTML = "When you go to your fry station, it suddenly bursts in flames and seems as if it is going to explode with hot oil. This would be a devastating catastrophe, as you just put in a batch of fries in. A waste of fries like that is a violation of the Geneva Convention. Time is ticking, and you notice a nice and conveniently placed bucket of water right next to the fryer.";
         ptext2.innerHTML = "Time is ticking, and the fire is spreading rapidly. Lives and fries are at stake. What do you do?";
         ptext3.innerHTML = "";
@@ -471,22 +484,8 @@ function stuckBusyWork(){
         b3.style.display = "none";
         b4.style.display = "none";
     }
-    function supervisorFire(){
-        pic.src = "";
-        ptext1.innerHTML = "You tell him that his supervisor has fired him due to reckless walking. He understands and passes down the manager position to you. You then live the rest of your life as the greatest manager that the Burger Place franchise has ever seen.";
-        ptext2.innerHTML = "";
-        ptext3.innerHTML = "";
-        ptext4.innerHTML = "";
-        b1.innerHTML = "Restart";
-        b2.innerHTML = "";
-        b3.innerHTML = "";
-        b1.style.display = "block";
-        b2.style.display = "none";
-        b3.style.display = "none";
-        b4.style.display = "none";
-    }
     function cleanProperly(){
-        pic.src = "";
+        pic.src = "images/cleanProperly.png";
         ptext1.innerHTML = "Luckily, you think very carefully and rationally, so you wait until the fire dies down in order to clean it properly.";
         ptext2.innerHTML = "After two hours of strenuous labor, you make the fry machine sparkling clean. You then decide to test it out, and make a nice fresh batch of fries. The fry machine seems to work fine, but now you have all these fries.";
         ptext3.innerHTML = "What do you do now?";
@@ -500,7 +499,7 @@ function stuckBusyWork(){
         b4.style.display = "none";
     }
     function cleanQuickly(){
-        pic.src = "";
+        pic.src = "images/cleanQuickly.png";
         ptext1.innerHTML = "You heroically rush towards the bucket of water and splash it all over the fryer. The fryer explodes with flaming oil, killing you instantly. Turns out that water and oil don't mix.";
         ptext2.innerHTML = "";
         ptext3.innerHTML = "";
@@ -514,7 +513,7 @@ function stuckBusyWork(){
         b4.style.display = "none";
     }
     function eatFriesOnce(){
-        pic.src = "";
+        pic.src = "images/eatFriesOnce.png";
         ptext1.innerHTML = "You decide to eat some fries, after all, what could happen? Luckily, your manager doesn't catch you.";
         ptext2.innerHTML = "What do you do now?";
         ptext3.innerHTML = "";
@@ -528,7 +527,7 @@ function stuckBusyWork(){
         b4.style.display = "none";
     }
     function eatFriesTwice(){
-        pic.src = "";
+        pic.src = "images/eatFriesTwice.png";
         ptext1.innerHTML = "You decide to eat some more fries, after all, what could happen? Unfortunately, your manager catches you and fires you for selfishly eating fries.";
         ptext2.innerHTML = "";
         ptext3.innerHTML = "";
@@ -542,7 +541,7 @@ function stuckBusyWork(){
         b4.style.display = "none";
     }
     function dontEatFries(){
-        pic.src = "";
+        pic.src = "images/dontEatFries.png";
         ptext1.innerHTML = "You decide not to eat the fries, after all, what if your manager catches you?";
         ptext2.innerHTML = "Your manager turns the corner and asks you to grab some more fries from the blast freezer in the back.";
         ptext3.innerHTML = "You've always had a suspicion about that blast freezer, there's got to be a reason why no one seems to like to go there.";
@@ -556,7 +555,7 @@ function stuckBusyWork(){
         b4.style.display = "none";
     }
     function noMoreFries(){
-        pic.src = "";
+        pic.src = "images/eatFriesTwice.png";
         ptext1.innerHTML = "You refuse your manager's order to go to the freezer. Unfortunately, he fires you because today is national Fry Day. Your refusal of getting fries just cost the Burger Place hundreds of customers.";
         ptext2.innerHTML = "";
         ptext3.innerHTML = "";
@@ -565,12 +564,12 @@ function stuckBusyWork(){
         b2.innerHTML = "";
         b3.innerHTML = "";
         b1.style.display = "block";
-        b2.style.display = "";
+        b2.style.display = "none";
         b3.style.display = "none";
         b4.style.display = "none";
     }
     function getFriesFreezer(){
-        pic.src = "";
+        pic.src = "images/getFriesFreezer.png";
         ptext1.innerHTML = "You decide to follow your manager's command and head to the blast freezer. Once you are in, you hear a loud click behind you. The freezer is absolutely pitch black, and you struggle to find the fries. You find the box of fries but are shivering too much to take it to the door quickly.";
         ptext2.innerHTML = "After 20 minutes of work, you make it back to the door just to find it locked shut. You pound on the reinforced door, begging for help. After what seems like hours, you see a familiar face. Your face turns from happiness to horror when you realize that it is the one and only, Karen. After you spilled her drink, she has never forgiven you.";
         ptext3.innerHTML = "She stares into your eyes as she laughs in rabid insanity. You find yourself faced with two options, either eat the frozen fries or don't.";
@@ -584,7 +583,7 @@ function stuckBusyWork(){
         b4.style.display = "none";
     }
     function eatFrozenFries(){
-        pic.src = "";
+        pic.src = "images/cleanQuickly.png";
         ptext1.innerHTML = "You eat the frozen fries in a desperate attempt for meager substance. The frozen fries lowers your temperature even more, which causes your untimely death.";
         ptext2.innerHTML = "";
         ptext3.innerHTML = "";
@@ -593,12 +592,12 @@ function stuckBusyWork(){
         b2.innerHTML = "";
         b3.innerHTML = "";
         b1.style.display = "block";
-        b2.style.display = "";
+        b2.style.display = "none";
         b3.style.display = "none";
         b4.style.display = "none";
     }
     function dontEatFrozenFries(){
-        pic.src = "";
+        pic.src = "images/dontEatFrozenFries.png";
         ptext1.innerHTML = "You refuse to waste perfectly good fries like that. You stare Karen dead in the eyes as your weak body starts to stiffen and your heart beats it's final pulse. You perish in the blast freezer, with your death being the top news story of the century.";
         ptext2.innerHTML = "";
         ptext3.innerHTML = "";
@@ -607,7 +606,7 @@ function stuckBusyWork(){
         b2.innerHTML = "";
         b3.innerHTML = "";
         b1.style.display = "block";
-        b2.style.display = "";
+        b2.style.display = "none";
         b3.style.display = "none";
         b4.style.display = "none";
     }
@@ -639,6 +638,12 @@ function stuckBusyWork(){
                 tellSomeoneElse();
                 state = "tellSomeoneElse";
             }     
+        }
+        else if(state == "tellSomeoneElse"){
+            if (button == 1){
+                cleanFryStation();
+                state = "cleanFryStation";
+            }
         }
         else if(state == "askHelpDrink"){
             if (button == 1){
